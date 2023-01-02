@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>1 Organization of Cannuckfind &#8212; CannuckFindReference 0.0.9 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1 Functions to use SpaCy" href="C3SC.html" />
+    <link rel="prev" title="1 Overview" href="overview.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <span class="target" id="module-geolocation"></span><section id="organization-of-cannuckfind">
+<h1><span class="sectnum">1</span> Organization of Cannuckfind<a class="headerlink" href="#organization-of-cannuckfind" title="Permalink to this heading">¶</a></h1>
+<section id="aggregation-of-responses">
+<h2><span class="sectnum">1.1</span> Aggregation of Responses<a class="headerlink" href="#aggregation-of-responses" title="Permalink to this heading">¶</a></h2>
+<p>It bears repeating that the purpose of this framework is not to perform analysis at the individual level.  The purpose of this framework is to construct a framework that can support statements in aggregate concerning the different attitudes in different geographical domains.</p>
+<span class="target" id="module-C3"></span><dl class="py class">
+<dt class="sig sig-object py" id="C3.C3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">C3.</span></span><span class="sig-name descname"><span class="pre">C3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">useSpaCy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">useGEOGRPY</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mxREC</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100000000000</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#C3.C3" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="C3.C3.mxREC">
+<span class="sig-name descname"><span class="pre">mxREC</span></span><a class="headerlink" href="#C3.C3.mxREC" title="Permalink to this definition">¶</a></dt>
+<dd><p>maximum number of records</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="C3.C3.useGEOGRPY">
+<span class="sig-name descname"><span class="pre">useGEOGRPY</span></span><a class="headerlink" href="#C3.C3.useGEOGRPY" title="Permalink to this definition">¶</a></dt>
+<dd><p>use GeoGraPy library</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="C3.C3.useSpaCy">
+<span class="sig-name descname"><span class="pre">useSpaCy</span></span><a class="headerlink" href="#C3.C3.useSpaCy" title="Permalink to this definition">¶</a></dt>
+<dd><p>use SpaCy library</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="types-of-responses">
+<h2><span class="sectnum">1.2</span> Types of Responses<a class="headerlink" href="#types-of-responses" title="Permalink to this heading">¶</a></h2>
+<p>One innovation of this framework is to all analysts to use judgement concerning the quality of the response.  These judgements can be implemented into the training dataset, then used to predict make predictions on the populations as a whole.  In many systems there is an NA or Not Available value.  This class expands on this concept.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CannuckFindReference</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html"><span class="sectnum">1</span> Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><span class="sectnum">1</span> Organization of Cannuckfind</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aggregation-of-responses"><span class="sectnum">1.1</span> Aggregation of Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#types-of-responses"><span class="sectnum">1.2</span> Types of Responses</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="C3SC.html"><span class="sectnum">1</span> Functions to use SpaCy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="C3GP.html"><span class="sectnum">1</span> Functions to use GeoGrapy</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="overview.html" title="previous chapter"><span class="sectnum">1</span> Overview</a></li>
+      <li>Next: <a href="C3SC.html" title="next chapter"><span class="sectnum">1</span> Functions to use SpaCy</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Harold Henson.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/KeyObjects.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
