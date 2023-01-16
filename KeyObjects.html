@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1 Organization of Cannuckfind &#8212; CannuckFindReference 0.0.9 documentation</title>
+    <title>2 Organization of Cannuckfind &#8212; CannuckFindReference 0.0.10 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -35,9 +35,9 @@
           <div class="body" role="main">
             
   <span class="target" id="module-geolocation"></span><section id="organization-of-cannuckfind">
-<h1><span class="sectnum">1</span> Organization of Cannuckfind<a class="headerlink" href="#organization-of-cannuckfind" title="Permalink to this heading">¶</a></h1>
+<h1><span class="sectnum">2</span> Organization of Cannuckfind<a class="headerlink" href="#organization-of-cannuckfind" title="Permalink to this heading">¶</a></h1>
 <section id="aggregation-of-responses">
-<h2><span class="sectnum">1.1</span> Aggregation of Responses<a class="headerlink" href="#aggregation-of-responses" title="Permalink to this heading">¶</a></h2>
+<h2><span class="sectnum">2.1</span> Aggregation of Responses<a class="headerlink" href="#aggregation-of-responses" title="Permalink to this heading">¶</a></h2>
 <p>It bears repeating that the purpose of this framework is not to perform analysis at the individual level.  The purpose of this framework is to construct a framework that can support statements in aggregate concerning the different attitudes in different geographical domains.</p>
 <span class="target" id="module-C3"></span><dl class="py class">
 <dt class="sig sig-object py" id="C3.C3">
@@ -64,8 +64,50 @@
 
 </section>
 <section id="types-of-responses">
-<h2><span class="sectnum">1.2</span> Types of Responses<a class="headerlink" href="#types-of-responses" title="Permalink to this heading">¶</a></h2>
+<h2><span class="sectnum">2.2</span> Types of Responses<a class="headerlink" href="#types-of-responses" title="Permalink to this heading">¶</a></h2>
 <p>One innovation of this framework is to all analysts to use judgement concerning the quality of the response.  These judgements can be implemented into the training dataset, then used to predict make predictions on the populations as a whole.  In many systems there is an NA or Not Available value.  This class expands on this concept.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="geolocation.unknownC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">geolocation.</span></span><span class="sig-name descname"><span class="pre">unknownC</span></span><a class="headerlink" href="#geolocation.unknownC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expands on the concept of unknown variables to categorical variables</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.JK">
+<span class="sig-name descname"><span class="pre">JK</span></span><a class="headerlink" href="#geolocation.unknownC.JK" title="Permalink to this definition">¶</a></dt>
+<dd><p>Joke</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.MX">
+<span class="sig-name descname"><span class="pre">MX</span></span><a class="headerlink" href="#geolocation.unknownC.MX" title="Permalink to this definition">¶</a></dt>
+<dd><p>maximum number of records</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.NA">
+<span class="sig-name descname"><span class="pre">NA</span></span><a class="headerlink" href="#geolocation.unknownC.NA" title="Permalink to this definition">¶</a></dt>
+<dd><p>known to unavailable</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.NL">
+<span class="sig-name descname"><span class="pre">NL</span></span><a class="headerlink" href="#geolocation.unknownC.NL" title="Permalink to this definition">¶</a></dt>
+<dd><p>invalid</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.PRIV">
+<span class="sig-name descname"><span class="pre">PRIV</span></span><a class="headerlink" href="#geolocation.unknownC.PRIV" title="Permalink to this definition">¶</a></dt>
+<dd><p>unknown to be private</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="geolocation.unknownC.UNKNOWN">
+<span class="sig-name descname"><span class="pre">UNKNOWN</span></span><a class="headerlink" href="#geolocation.unknownC.UNKNOWN" title="Permalink to this definition">¶</a></dt>
+<dd><p>uninitialized</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
@@ -89,13 +131,14 @@
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html"><span class="sectnum">1</span> Overview</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"><span class="sectnum">1</span> Organization of Cannuckfind</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#aggregation-of-responses"><span class="sectnum">1.1</span> Aggregation of Responses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#types-of-responses"><span class="sectnum">1.2</span> Types of Responses</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#"><span class="sectnum">2</span> Organization of Cannuckfind</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aggregation-of-responses"><span class="sectnum">2.1</span> Aggregation of Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#types-of-responses"><span class="sectnum">2.2</span> Types of Responses</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="C3SC.html"><span class="sectnum">1</span> Functions to use SpaCy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="C3GP.html"><span class="sectnum">1</span> Functions to use GeoGrapy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataTL.html"><span class="sectnum">1</span> Transform and Load Data</a></li>
 </ul>
 
 <div class="relations">
@@ -130,7 +173,7 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2022, Harold Henson.
+      &copy;2023, Harold Henson.
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 5.0.2</a>
